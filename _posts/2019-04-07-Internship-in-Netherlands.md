@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Travel Hong Kong"
-description: "Things to do in Hong Kong"
+title: "Internships in Netherlands"
+description: "Internships in Netherlands"
 comments: true
-keywords: "travel, hong kong, asia, things to do, python, pycon, conference"
+keywords: "internships in netherlands, utwente, enschede, netherlands, europe, study"
 ---
 
-### How I landed in Hong Kong
+### Interships in Netherlands
 
-I had the opportunity to speak at the Python Conference in Hong Kong.
+TBD
