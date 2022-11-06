@@ -8,7 +8,7 @@
 # Site settings
 # SEO settings
 title: "Akul in Netherlands"
-title2: ": Study Blog" # default: ""
+# title2: ": Study Blog" # default: ""
 description: "My Study blog on Jekyll."
 keywords: "Jekyll, study, live, blog, akul, mehra, traveller, asia, europe, netherlands"
 url: http://akul.me
