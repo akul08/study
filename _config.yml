@@ -8,17 +8,17 @@
 # Site settings
 # SEO settings
 title: "Akul's"
-title2: " Travel Blog" # default: ""
-description: "My Travel blog on Jekyll."
-keywords: "Jekyll, travel, blog, akul, mehra, traveller, asia, europe, netherlands"
+title2: " Study Blog" # default: ""
+description: "My Study blog on Jekyll."
+keywords: "Jekyll, study, live, blog, akul, mehra, traveller, asia, europe, netherlands"
 url: http://akul.me
-baseurl: "/travel"
+baseurl: "/study"
 # baseurl: null
 
 google_analytics: UA-63571538-2
 
-repo: http://github.com/akul08/travel
-disqus_shortname: "akultravel"
+repo: http://github.com/akul08/study
+disqus_shortname: "akulstudy"
 comments: true
 
 # Build settings
@@ -38,7 +38,7 @@ sass:
 author:
   name     : "Akul Mehra"
   job      : "Python Enthusiast and Web Developer"
-  bio      : "“Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.”"
+  bio      : "“Akul in Netherlands: Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.”"
   thumb    : /images/author.jpg
   email    : mehra.akul@gmail.com
   url      : http://akul.me
