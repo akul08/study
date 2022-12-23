@@ -1,66 +1,64 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# SEO settings
+# Site
+name: "Akul in Netherlands"
 title: "Akul in Netherlands"
-# title2: ": Study Blog" # default: ""
-description: "My Study blog on Jekyll."
-keywords: "Jekyll, study, live, blog, akul, mehra, traveller, asia, europe, netherlands"
-url: http://akul.me
-baseurl: "/study"
-# baseurl: null
+description: "Broadening my horizons one country at a time."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /study
+google_analytics: 'G-7L0QHRQ008'
+# disqus: 'demowebsite'
+comments: false
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
 
-google_analytics: UA-63571538-2
+# Authors
+authors:
+  akul:
+    name: Akul
+    display_name: Akul
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: mehra.akul@gmail.com
+    web: https://akul.me
+    twitter: https://twitter.com/AkulMehra
+    description: "Awesomest Person Ever To Exist. Digital Nomad. Traveling The World And Living The Dreams!"
 
-repo: http://github.com/akul08/study
-disqus_shortname: "akulstudy"
-comments: true
-
-# Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
-
-source: ./
-destination: ./_site
-
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
-
-# Author settings
-author:
-  name     : "Akul Mehra"
-  job      : "Python Enthusiast and Web Developer"
-  bio      : "“Akul in Netherlands: Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.”"
-  thumb    : /images/author.jpg
-  email    : mehra.akul@gmail.com
-  url      : http://akul.me
-  github   : http://github.com/akul08
-  twitter  : http://twitter.com/AkulMehra
-  facebook : https://www.facebook.com/akul08
-  linkedin : http://linkedin.com/in/akul08
-
-# social settings
-og_locale: "en_US"
-twitter_card: "summary_large_image"
-twitter_site: "@AkulMehra"
-
-gems:
-  - bourbon
+# Plugins
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 12
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+# # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "enabled"
+adsense-data-ad-client: "ca-pub-6885046636144467"
+# adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
